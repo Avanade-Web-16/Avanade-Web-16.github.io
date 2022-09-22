@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- tag ou elemento - e sempre será a primeira tag-->
+    <!-- chamada também de elemento ancestral, pq é o primeiro a ser declarado -->
+    <!-- trabalha com hierarquia -->
+    <!-- dentro dele, só tem dois filhos -->
+    <!--  head é tudo que vem antes da pagina e body é a pagina -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Curso HTML5, CSS3 e JavaScript</title>
+        <style type="text/css">
+            div.container {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: linear-gradient(rgba(0,0,0,0.6)70%), rgba(0,0,0,0.2);
+                /* css incorporado */
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+            h1, h2 {
+                margin: 0;
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                color: #555;
+            }
+            /* body>div>h1.titulo  {
+                color: red;
+            }
+            body>div.container>h1.titulo{ 
+                color: pink;
+            } */
+            /* h1.titulo {
+                color: red !important ->  muito usado quando conteudo dinamido, for gerado.
+            } */
+
+            h1.titulo  {
+                font-size: 2em; 
+                color: #fff
+                /* largura da letra M(letra que tem maior espaço fisico) na fonte atual, que é equivalente a 16px */
+            }
+            h2.titulo {
+                font-size: 2em;
+                margin-top: 1%;
+                color: #fff;
+            }
+            body {
+                background: url("assets/images/background-mobile.webp")no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            /* daqui pra cima é tudo mobile */
+
+            @media (min-width: 768px) {
+                /* TABLET */
+                body {
+                background: url("assets/images/background-tablet.webp")no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            }
+            @media (min-width: 1280px) {
+                /* DESKTOP */
+                body {
+                background: url("assets/images/background-desktop.webp")no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            }
+            @media (min-width: 1680px){
+                /* Extra Large - iMac 27" */
+                body {
+                background: url("assets/images/background-desktop.webp")no-repeat;
+                background-size: cover;
+                background-position: center center;
+            
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <!-- a tag div é um elemento de bloco. e isso significa que posso mexer nela. -->
+            <h1 class="titulo">Seja bem vindo ao curso de HTML 5, CSS3 e JavaScript</h1>
+            <h2 class="titulo"> Estamos estudando no momento: <hi>html5</hi>.</h2>
+        </div>
+
+    </body>
+    </html>
+
+
+    <!-- como criar uma site profissional? -->
+<!-- primeira dica: tem haver com as fontes 
+use uma fonte diferente da fonte padrão do navegador -->
+<!-- segunda dica: sempre que possível, remove o negrito -->
+<!-- terceira dica: fuja das cores pretas e primárias -->
+<!-- quarta dica: usar imagens de alta definição -->
