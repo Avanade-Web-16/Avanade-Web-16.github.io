@@ -5,7 +5,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map"
+    "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
+    "git": "git add --all & git commit -m 'deploy' && push origin master"
   },
   "keywords": [],
   "author": "",
