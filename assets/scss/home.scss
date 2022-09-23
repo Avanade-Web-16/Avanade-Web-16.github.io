@@ -1,20 +1,56 @@
-body{
-    background: url("../images/6cbank/tablet.webp") no-repeat;
-    background-size: contain;
+body {
+    // background: url("../images/6cbank/tablet.webp") no-repeat;
+    // background-size: contain;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 100px - 100px);
+    // height: calc(100vh - 100px - 100px);
     display: flex;
+
     & > header {
+        position: fixed;
+        top: 0;
+        z-index: 100; //quantas camadas na frente, eu quero colocar.
         height: 100px;
-        width: 100px;
+        width: 100%;
         display: flex;
+        justify-content: center; //junta tudo no centro da pagina.
+        align-items: center;
+        background: #fff;
+        transition-duration: 0.5s;
+        & > nav {
+            width:70%;
+            > ul {
+                margin:0;
+                display: flex; // links um do lado do outro
+                > li {
+                    list-style: none; // tira a bolinha
+                    margin-right: 20px;
+                    > a {
+                        text-decoration: none;
+                        color: #222;
+                        font-weight: bold; //negrito
+                        
+                    }
+                }
+            }
+        }
         button {
             width: 200px;
             height: 40px;
+            border: none;
+            text-transform: uppercase;
+            color: #333;
             background: #ffe45c;
             font-size: 0.8em;
             border-radius: 20px;
         }
     }
+}
+
+.jss4 .jss6 {
+    fill: hsla(0, 0%, 14%, 1); //colorir o svg
+}
+.jss12 {
+    width: auto;
+    height: 24px;
 }
