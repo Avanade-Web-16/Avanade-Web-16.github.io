@@ -18,7 +18,7 @@ body {
         background: #fff;
         transition-duration: 0.5s;
         & > nav {
-            width:70%;
+            width:60%;
             > ul {
                 margin:0;
                 display: flex; // links um do lado do outro
@@ -29,7 +29,7 @@ body {
                         text-decoration: none;
                         color: #222;
                         font-weight: bold; //negrito
-                        
+
                     }
                 }
             }
