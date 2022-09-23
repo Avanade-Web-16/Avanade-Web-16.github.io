@@ -6,7 +6,8 @@
   "devDependencies": {},
   "scripts": {
     "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
-    "git": "git add --all & git commit -m 'Deploy' && push origin master && echo 'Deploy realizado'"
+    "git": "git add --all && git commit -m 'Deploy' && git push origin master && echo 'deploy realizado'"
+
   },
   "keywords": [],
   "author": "",
