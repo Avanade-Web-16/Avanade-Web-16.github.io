@@ -1,16 +1,16 @@
-
-  {
+{
   "name": "web",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
     "git": "git add --all && git commit -m 'Deploy' && git push origin master && echo 'deploy realizado'"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }

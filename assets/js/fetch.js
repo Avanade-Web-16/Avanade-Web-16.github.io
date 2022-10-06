@@ -12,8 +12,10 @@ const showData = async (result) => {
 //o evento blur significa que clicamos na caixa de texto e saímos dela.
 cep.addEventListener("blur", async (e) => {
   let search = cep.value.replace("-", "");
-  if (search < 8 || Number(search) === NaN) {
+  console.log(Number(search));
+  if (search < 8 || isNaN(search)) {
     alert("CEP inválido!");
+    cep.value = "";
     return;
   }
 
@@ -35,3 +37,8 @@ cep.addEventListener("blur", async (e) => {
   showData(json);
 });
 
+
+
+//acessar url via js. fecth
+// conseguir listar os produtos form - titulo e descrição.
+//
